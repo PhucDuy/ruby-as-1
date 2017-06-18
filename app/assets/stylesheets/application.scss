@@ -5,8 +5,21 @@
 }
 .food_item {
   margin: 10px 0px;
-  height: 300px;
+  height: 100px;
+}
+.img-food-item {
+  height: 90px;
+  width: 90px;
+  margin: 5px 0px;
 }
 .row {
   margin: 0px;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+.margin_top_bottom {
+	margin: 10px 0px; 
+
 }
