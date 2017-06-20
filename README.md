@@ -4,9 +4,9 @@ Pho Restaurant is a Ruby on Rails restaurant website let users order foods.
 
 Submitted by: Phuc Tran
 
-Time spent: **XX** hours spent in total
+Time spent: 20 hours spent in total
 
-URL: **heroku-app-url**
+URL: https://still-temple-47806.herokuapp.com
 
 ## User Stories
 
