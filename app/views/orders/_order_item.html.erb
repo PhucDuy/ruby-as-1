@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-3">
+    <%= image_tag order_item.food_item.image_url, :class => "img-food-item img-thumbnail"%>
+  </div>
+  <div class="col-md-3">
+    <h4 class="card-title"><%= order_item.food_item.name %></h4>
+    <p class="card-text"><%= number_to_currency(@order_item.food_item.price) %></p>
+  </div>
+  <div class="col-md-3">
+    <p class="vertical-center"><strong>Quantity: </strong><%= order_item.quantity %></p>
+  </div>
+  <div class="col-md-3">
+    <p class="vertical-center"><strong>Total: </strong><%= number_to_currency(order_item.total) %></p>
+  </div>
+</div>

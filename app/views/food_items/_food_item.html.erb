@@ -1,0 +1,19 @@
+<div class="card food_item">
+  <div class="row">
+    <div class="col-md-2">
+      <%= image_tag food_item.image_url, :class => "img-food-item img-thumbnail"%>
+    </div>
+    <div class="col-md-4">
+      <div class="card-block">
+        <h4 class="card-title"><%= food_item.name %></h4>
+        <p class="card-text"><%= number_to_currency(food_item.price) %></p>
+      </div>
+    </div>
+    <div class="col-md-1 vertical-center">
+      <%= link_to 'Show',food_item,class: "btn btn-primary" %>
+    </div>
+    <div class="col-md-1 vertical-center">
+      <%= link_to 'Order',new_order_path(food_item: food_item.id),class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

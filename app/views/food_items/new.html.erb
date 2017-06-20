@@ -1,0 +1,4 @@
+<h1>New Food Item</h1>
+<%= hidden_field_tag(:food_item,params[:food_item]) %>
+<%= render 'form', food_item: @food_item %>
+<%= link_to 'Back', food_items_path %>

@@ -1,0 +1,28 @@
+<h1>New Order</h1>
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-3">
+        <%= image_tag @order_item.food_item.image_url, :class => "img-food-item img-thumbnail"%>
+      </div>
+      <div class="col-md-3">
+        <h4 class="card-title"><%= @order_item.food_item.name %></h4>
+        <p class="card-text"><%= number_to_currency(@order_item.food_item.price) %></p>
+      </div>
+      <div class="col-md-3">
+        <p class="vertical-center"><strong>Quantity: </strong><%= @order_item.quantity %></p>
+      </div>
+      <div class="col-md-3">
+        <p class="vertical-center"><strong>Total: </strong><%= number_to_currency(@order_item.total) %></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <%= render 'form', order: @order %>
+  </div>
+</div>
+<div class="row margin_top_bottom">
+  <div class="col-md-6">
+    <%= link_to 'Back', orders_path ,class: "btn btn-primary"%>
+  </div>
+</div>
